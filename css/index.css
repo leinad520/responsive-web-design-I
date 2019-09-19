@@ -69,9 +69,7 @@ h1, h2, h3, h4, h5 {
 html {
 	max-width: 600px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-right: 1.25%;
-    padding-left: 1.25%;
+    padding: 20px 1.25% 0 1.25%;
 }
 
 body {
@@ -100,6 +98,10 @@ nav a {
 
 .logo {
 	width: 20%;
+}
+
+.tablet-logo {
+    display: none;
 }
 
 .logo-2 {
@@ -252,11 +254,45 @@ footer ul {
 }
 
 @media(max-width: 800px) {
-    body {
-        
+
+    nav {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        margin-bottom: 40px;
+    }
+    
+    nav a {
+        color: grey;
+        text-decoration: none;
+        font-size: 40%;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .tablet-logo {
+        display: block;
+        margin: 0 auto;
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    
+      .code-image {
+        display: none;
+    }
+
+    .title-section {
+        justify-content: center;
     }
 }
 
+@media(max-width: 500px) {
+    
+}
 
 
 /* @media only screen 
