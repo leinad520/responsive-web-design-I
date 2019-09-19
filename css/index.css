@@ -177,97 +177,11 @@ footer {
 	font-size: 0.8em;
 }
 
-/* Services.html */
-
-.services-body p {
-	line-height: 1.3;
-}
-
-.services-section img {
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-.services-text h1 {
-	font-size: 1.2em;
-}
-
-.services-text p {
-	font-size: 12px;
-	margin-bottom: 20px;
-}
-
-.main-section-services {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-content: space-between;
-	height: 580px;
-	margin-top: 20px;
-}
-
-.main-section-services div {
-	width: 48%;
-	border: 1px solid black;
-	background-color: whitesmoke;
-	font-size: 11px;
-	display: flex;
-	flex-flow: row wrap;
-	align-content: space-around;
-	height: 175px;
-	padding: 15px;
-}
-
-.main-section-services button {
-	border-radius: .5em;
-	margin-top: 15px;
-	width: 100px;
-	height: 25px;
-	font-size: 10px;
-	/* padding: 1em; */
-	vertical-align: center;
-}
-
-.services-footer {
-	display: flex;
-	justify-content: space-between;
-	font-size: 11px;
-}
-
-.services-footer div {
-	width: 48%;
-}
-
-.services-footer div img {
-	width: 100%;
-}
-
-footer ul {
-	list-style: square;
-	margin-left: 20px;
-	line-height: 2
-}
-
-.bolded-hr {
-	border: 1px solid black;
-	margin-top: 30px;
-}
 
 @media(max-width: 800px) {
 
     nav {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
-        margin-bottom: 40px;
-    }
-    
-    nav a {
-        color: grey;
-        text-decoration: none;
-        font-size: 40%;
     }
     
     .logo {
@@ -291,57 +205,59 @@ footer ul {
 }
 
 @media(max-width: 500px) {
-    
-}
-
-
-/* @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-	html {
-		width: 90%;
+    html {
+        padding: 10px 0%;
 	}
-	body {
-		background-color: lightblue;
+	
+	section, footer {
+		padding: 0px 2%;
 	}
 
-	.main-section-services {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		align-content: space-between;
-		height: 1200px;
-		margin-top: 20px;
-	}
+    .tablet-logo {
+        width: 90px;
+    }
 
-	.main-section-services div {
+    nav {
+        flex-direction: column;
+        font-size: 6vw;
+    }
+
+    nav a {
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
 		width: 100%;
+		text-align: center;
+    }
+
+    .title {
+        font-size:7vw;
+    }
+
+    button {
+        width: 60%;
+        font-size: 25%;
+	}
+	
+	.main-section {
+		flex-direction: column;
 		border: 1px solid black;
-		background-color: whitesmoke;
-		font-size: 11px;
-		display: flex;
-		flex-flow: row wrap;
-		align-content: space-around;
-		height: 175px;
-		padding: 15px;
 	}
 
-	.services-footer {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		font-size: 11px;
-	}
-
-	.services-footer div {
+	.main-section div {
 		width: 90%;
-		margin-top: 30px;
+		font-size: 2vw;
 	}
 
-	div.services-img-container {
-		width: 30%;
+	.main-section div.second-row {
+		width: 90%;
 	}
 
+	.main-section div.third-row {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+   
 }
- */
+
+
+
