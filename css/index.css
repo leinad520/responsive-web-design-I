@@ -67,10 +67,13 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 html {
-	width: 600px;
-	margin: 0 auto;
-
+	max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 1.25%;
+    padding-left: 1.25%;
 }
+
 body {
 	width: 100%;
 }
@@ -81,7 +84,7 @@ nav {
 	align-items: center;
 	padding: 10px 0;
 	margin-bottom: 40px;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 
 nav.services-nav {
@@ -164,7 +167,7 @@ div.second-row img {
 footer {
 	font-size: 13px;
 	margin-top: 30px;
-	margin-bottom: 80px;
+	/* margin-bottom: 80px; */
 }
 
 .copyright {
@@ -248,8 +251,15 @@ footer ul {
 	margin-top: 30px;
 }
 
+@media(max-width: 800px) {
+    body {
+        
+    }
+}
 
-@media only screen 
+
+
+/* @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
@@ -257,7 +267,7 @@ footer ul {
 		width: 90%;
 	}
 	body {
-		/* background-color: lightblue; */
+		background-color: lightblue;
 	}
 
 	.main-section-services {
@@ -298,4 +308,4 @@ footer ul {
 	}
 
 }
-
+ */
